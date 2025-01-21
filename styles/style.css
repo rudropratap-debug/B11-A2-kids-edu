@@ -5,6 +5,10 @@
     font-optical-sizing: auto;
     font-style: normal;
 }
+*{
+    padding: 0px;
+    margin: 0px;
+}
 
 /* shared style */
 .display-flex{
@@ -54,22 +58,342 @@
     font-size: 2rem;
     font-weight: 700;
     line-height: 30px;
+    margin-top: 25px;
 }
 .nav-icon{
     display: none;
 }
 /* navbar style end */
 
+/* banner section style */
+.banner{
+    align-items: center;
+    justify-content: space-around;
+    padding-left: 141px;
+    padding-right: 141px;
+    margin-top: 20px;
+    gap:50px;
+}
+
+.banner-heading{
+    font-size: 3.5rem;
+    margin-bottom: 24px;
+}
+.banner-description{
+    font-size: 1.25rem;
+    margin-top: 0px;
+    margin-bottom: 24px;
+    
+}
+.banner-btn{
+    width: 197px;
+    height: 50px;
+    border: none;
+    border-radius:12px;
+    padding: 10px;
+    color: white;
+    font-size: 1.25rem;
+}
+/* banner section style */
+
+/* carriculam section style */
+.carriculum{
+    max-width: 1440px;
+    margin-top: 80px;
+    padding: 0px 140px;
+    text-align: center;
+    background-image: url(../assets/bg.png);
+    background-position: center;
+    margin-bottom: 60px;
+    
+
+}
+.carriculum-card-container{
+    display: grid;
+    grid-template-columns:(1,1fr);
+    margin-bottom: 80px;
+}
+
+.carriculum-card{
+    justify-items: center;
+    text-align: center;
+    padding-top: 50px;
+    width: 380.8px;
+    height: 450.78px;
+    border-radius: 18.86px;
+    border: 0.94px solid rgb(222, 245, 255);
+    box-shadow: inset 0px 0px 28.3px 0.94px rgba(0, 0, 0, 0.05);
+    background: linear-gradient(180.00deg, rgb(222, 245, 255),rgba(255, 255, 255, 0) 40%),rgb(255, 255, 255);
+    }
+    .carriculum-heading{
+        font-size: 2.875rem;
+        margin-top: 60px;
+        margin-bottom: 80px;
+    }
+    .card-heading{
+        font-size: 1.5rem;
+        font-weight: 700px;
+        
+    }
+    .card-description{
+        font-size: 0.9rem;
+        font-weight: 500px;
+        width:270px;
+        margin-bottom: 60px;
+    }
+    .carriculum-card-container{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); 
+    }
+    .navigation{
+        width: 60px;
+        height: 60px;
+        background-color: #FEA301;
+        border-radius: 50%;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        color:white;
+        
+        
+    }
+    .navigation-container{
+        align-items: center;
+        justify-content: center;
+        gap:10px;
+    }
+/* carriculum section style end */
+
+/* story section style */
+.stories{
+    height:950px;
+    text-align: center;
+    background: url(../assets/bg.png),linear-gradient(0.00deg, rgba(254, 163, 1, 0.3),rgba(255, 255, 255, 0.3) 100%);
+    background-position: center;
+    width: 100%;
+}
+.stories-heading{
+    margin-bottom: 80px;
+    font-size: 2.875rem;
+    font-weight: 700px;
+}
+.story-heading{
+    font-size: 1.5rem;
+    font-weight: 700px;
+    margin-left: 40px;
+    margin-bottom: 10px;
+}
+.story-description{
+    font-weight: 500px;
+    font-size: 0.875px;
+    width:430px;
+    margin-left: 40px;
+}
+.story-cards{
+    
+    max-width: 1000px;
+    display: grid;
+    grid-template-areas:    'tc  tc-2  tc-3'
+                            'tc   tc-4   tc-5';
+    gap:20px;
+}
+.training-card{
+    flex-direction: column;
+    max-width: 540px;
+    height:620px;
+    grid-area: tc;
+    text-align: left;
+    background-color: white;
+}
+.training-card-2{
+    grid-area: tc-2;
+    background-color: white;
+    margin-bottom: 0px;
+    border-radius: 16px;
+}
+.training-card-3{
+    grid-area: tc-3;
+
+}
+.training-card-4{
+    grid-area: tc-4;
+}
+.training-card-5{
+    grid-area: tc-5 ;
+}
+
+
+.training-card>img{
+    width: 100%;
+    height: 50%;
+    border-radius: 16px 16px 0px 0px;
+    background-color: rgb(217, 217, 217);
+    margin-bottom: 0px;
+}
+.story-heading{
+    color: rgb(0, 0, 0);
+    font-size: 1.5rem;
+    font-weight: 700px;
+    width: 402.49px;
+    margin-bottom: 47px;
+}
+.story-description{
+    color: rgb(102, 102, 102);
+    font-weight: 500;
+    font-size: 0.95rem;
+    margin-bottom: 35px;
+}
+.story-btn{
+    width: 174.51px;
+    height: 47.93px;
+    border-radius: 48px;
+    background-color: rgb(60, 216, 232);
+    border: none;
+    color: white;
+    margin-top: -40px;
+    margin-left: 35px;
+}
+.training-card-2{
+    flex-direction: column;
+    width: 290px;
+    height: 301.61px;
+}
+.training-card-2>img{
+    height:50%;
+    width: 100%;
+    border-radius: 16px 16px 0px 0px;
+    background:rgb(255, 255, 255);
+}
+.story-2-btn{
+    width:155.51px;
+    height:38.35px;
+    border-radius: 47.93px;
+    background: rgb(149, 178, 38); 
+    border: none;
+    color: white;
+    font-size: 0.95rem;
+    margin-top: -20px;
+    margin-left: 20px;
+    
+}
+/* story section style end */
+
+/* footer section style */
+.footer{
+    justify-content:space-evenly;
+    align-items: center;
+    background-color:  rgb(1, 172, 253);
+    padding-left:140px;
+    padding-right: 140px;
+    list-style: none;
+    height:500px;
+    color: white;
+}
+
+.footer-list >ul{
+    flex-direction: column;
+    list-style: none;
+}
+.footer-list ul>li{
+    margin-top: 20px;
+}
+
+.footer-description{
+    width: 380px;
+}
+.footer-item-heading{
+    display: inline;
+    font-size: 2.625rem;
+    font-weight: 700;
+}
+.footer-item-description{
+    width: 350px;
+    font-size: 1.2rem;
+}
+.footer-icons >img{
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+/* footer section style end */
+
+
+
+
+
+
 @media screen and (max-width:576px){
     .navbar{
         justify-content: space-between;
         padding-left:16px;
         padding-right: 16px;
+        border: 1px solid #FEA301;
     }
-    .nav-list, .nav-btn, .nav-title{
+    .nav-list, .nav-btn, .nav-title, .training-card{
         display: none;
     }
     .nav-icon{
         display: inline;
+    }
+    .banner{
+        flex-direction: column-reverse;
+        padding-left: 16px;
+        padding-right: 17px;
+        text-align: center;
+    }
+    .banner-img{
+        width:350px;
+    }
+    .carriculum{
+        justify-items: center;
+        background-position: right;
+    }
+    .carriculum-card-container{
+        grid-template-columns: 1fr;
+        justify-content: center;
+        gap:20px;
+    }
+    .carriculum-card{
+        width:350px;
+    }
+    .navigation-container{
+        display: none;
+    }
+    .stories{
+        margin-left: auto;
+        margin-right: auto;
+        background-position: right;
+        align-items: center;
+        justify-items: center;
+        text-align: center;
+        max-width: 100%;
+    }
+    .story-cards{
+        justify-items: center;
+        max-width: 300px;
+        grid-template-areas:'tc-2 tc-3'
+                            'tc-4 tc-5';
+        gap:20px;
+        justify-content: center;
+        margin:0px;
+    }
+    .training-card-2{
+        width:175px;
+        margin:0px;
+    }
+    .footer{
+        flex-direction: column;
+        gap:10px;
+        height: 660px;
+        text-align: left;
+    }
+    .footer-list{
+        margin-left: -250px;
+        margin-top: 20px;
+    }
+    .footer-icons{
+        margin-left: -155px;
+        margin-bottom: 60px;
+        margin-top: 50px;
     }
 }
